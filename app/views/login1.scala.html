@@ -1,0 +1,23 @@
+@(loginForm: Form[LoginData])(implicit request: MessagesRequestHeader, flash: Flash)
+
+@main("Login 1"){
+    <h1>Login</h1>
+    <form method="post" action="@routes.taskList1.validateLoginPost">
+        @helper.CSRF.formField
+        Username: <input type="text" name="username">
+            <br>
+        Password: <input type="password" name="password">
+            <br>
+        <input type="submit">
+    </form>
+
+    <h1>Create User</h1>
+    @helper.form(action=routes.taskList1.validateLoginForm) {
+        @helper.CSRF.formField
+        @helper.inputText(loginForm("Username"))
+        @helper.inputPassword(loginForm("Password"))
+        <div class="form-actions">
+            <button type="submit">submit</button>
+        </div>
+    }
+}

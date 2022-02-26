@@ -1,0 +1,9 @@
+.errors{
+    background: red;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
