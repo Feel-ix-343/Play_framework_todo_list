@@ -36,7 +36,7 @@ class taskList1 @Inject()(cc: MessagesControllerComponents) extends MessagesAbst
       else Redirect(routes.taskList1.login).flashing("error" -> "Invalid username/password combination")
     }.getOrElse(Redirect(routes.taskList1.login))
   }
-  def validateLoginForm = Action { implicit request =>
+  def createUserForm = Action { implicit request =>
     loginForm.bindFromRequest.fold(
       formWithErrors => BadRequest(views.html.login1(formWithErrors)),
       ld =>
@@ -46,7 +46,6 @@ class taskList1 @Inject()(cc: MessagesControllerComponents) extends MessagesAbst
           else Redirect(routes.taskList1.login).flashing("error" -> "User creation failed")
     )
   }
-
   def createUser = Action { implicit request =>
     val postVal = request.body.asFormUrlEncoded
     postVal.map { args =>

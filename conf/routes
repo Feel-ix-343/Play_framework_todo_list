@@ -4,13 +4,13 @@
 # ~~~~
 
 # An example controller showing a sample home page
-GET     /                           controllers.HomeController.index()
+GET     /                           controllers.Application.index()
 
 GET     /taskList1      controllers.taskList1.taskList
 GET     /login1         controllers.taskList1.login
 GET     /validateGet1      controllers.taskList1.validateLoginGet(username, password)
 POST    /validatePost1      controllers.taskList1.validateLoginPost
-POST    /validateForm1       controllers.taskList1.validateLoginForm
+POST    /validateForm1       controllers.taskList1.createUserForm
 POST    /createUser1        controllers.taskList1.createUser
 GET     /logout1            controllers.taskList1.logout
 POST    /addTask1           controllers.taskList1.addTask
