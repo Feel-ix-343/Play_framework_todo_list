@@ -1,27 +1,27 @@
 @(taskList: Seq[String])(implicit request: RequestHeader, flash: Flash)
 
 @main("Task List") {
-    <h1>Task List</h1>
-    <ul>
-        @for((task, i) <- taskList.zipWithIndex) {
-            <li>@task</li>
-            <form method="post" action="@routes.taskList1.deleteTask">
+    <div class="container">
+        <div class="centered-display">
+            <h1>Task List</h1>
+            <form method="post" action="@routes.taskList1.addTask" class="form">
                 @helper.CSRF.formField
-            <input type="hidden" name="index" value="@i">
-            <input type="submit" value="delete">
+                <input type="text" name="newTask" class="input-box">
+                <input type="submit" class="submit">
             </form>
-        }
-    </ul>
-
-    <form method="post" action="@routes.taskList1.addTask">
-        @helper.CSRF.formField
-        <input type="text" name="newTask">
-        <input type="submit">
-    </form>
-
-
-
-    <div>
-        <a href="@routes.taskList1.logout">logout</a>
+            @for((task, i) <- taskList.zipWithIndex) {
+                <div class="tasklist">
+                    <form method="post" action="@routes.taskList1.deleteTask">
+                        @helper.CSRF.formField
+                    <input type="hidden" name="index" value="@i">
+                    <input type="submit" value="X" class="taskset">
+                    </form>
+                    @task
+                </div>
+            }
+            <div>
+                <a href="@routes.taskList1.logout"><button type="button" class="submit">Logout</button></a>
+            </div>
+        </div>
     </div>
 }

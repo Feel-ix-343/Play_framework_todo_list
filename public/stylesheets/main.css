@@ -6,12 +6,18 @@
     padding-bottom: 2vh;
     margin-left: 25vw;
     margin-right: 25vw;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
+
+.error {
+    color: white;
+}
+
 
 .container{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     padding-top: 10vh;
 }
 
@@ -20,8 +26,71 @@
     border-radius: 20px;
     padding: 30px;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    width: 30vw;
+    text-align: center;
 }
 
 .submit{
+    border: none;
+    background: #0066A2;
+    color: white;
+    border-radius: 20px;
+    height: 50px;
+    width: 100px;
+    text-shadow: none;
+    font-family: "Odudo Mono Bold 14px", serif;
+    margin-top: 10px;
+    transition: box-shadow .25s, width .25s;
+}
+.submit:hover{
+    box-shadow: rgb(38, 57, 77) 10px 20px 30px -20px;
+    width: 105px;
+    cursor: pointer;
+}
 
+.info{
+    font-size: 14px;
+    font-family: "Odudo Mono Light", serif;
+}
+
+.input-box {
+    border-style: none;
+    border-radius: 5px;
+    height: 40px;
+    font-size: 25px;
+    font-family: "Odudo Mono Bold";
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.form{
+    text-align: center;
+}
+
+.tasklist {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 200px;
+}
+.taskset{
+     border: none;
+     background: #0066A2;
+     color: white;
+     border-radius: 50px;
+     height: 25px;
+     width: 25px;
+     margin-right: 20px;
+     text-shadow: none;
+     font-family: "Odudo Mono Bold 14px", serif;
+     margin-top: 10px;
+     transition: box-shadow .25s, width .25s;
+ }
+.taskset:hover{
+    box-shadow: rgb(38, 57, 77) 10px 20px 30px -20px;
+    width: 30px;
+    cursor: pointer;
+}
+.taskset:active{
+    width: 40px;
 }
