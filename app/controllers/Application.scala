@@ -21,4 +21,8 @@ class Application @Inject()(val controllerComponents: ControllerComponents) exte
   def index() = Action { implicit request =>
     Ok(views.html.index())
   }
+
+  def randomNumber = Action {
+    Ok(util.Random.nextInt(100).toString)
+  }
 }
