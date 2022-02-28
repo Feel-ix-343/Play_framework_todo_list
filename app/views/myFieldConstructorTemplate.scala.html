@@ -1,0 +1,12 @@
+@(elements: helper.FieldElements)
+<div>
+    @elements.name: @elements.input
+    <br>
+    <span class="info">
+        @elements.infos.mkString(", ")
+    </span>
+    <br>
+    <span class="error" style="display: @if(!elements.hasErrors){none}">
+        @elements.errors.mkString(", ")
+    </span>
+</div>

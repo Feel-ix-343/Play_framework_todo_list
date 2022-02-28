@@ -1,39 +1,29 @@
 @(loginForm: Form[LoginData])(implicit request: MessagesRequestHeader, flash: Flash)
+@import models.MyHelpers._
+
 
 @main("Login 1"){
-    <div class="container">
-        <div class="centered-display">
-            <h1>Login</h1>
-            <form method="post" action="@routes.taskList1.validateLoginPost" class="form">
-                @helper.CSRF.formField
-                Username: <input type="text" name="username" id="username-login" class="input-box">
-                    <br>
-                Password: <input type="password" name="password" id="password-login" class="input-box">
-                    <br>
-                <input type="submit" class="submit">
-            </form>
+<div class="container">
+  <div class="centered-display">
+    <h1 class="form-title">Login</h1>
+    <form method="post" action="@routes.taskList1.validateLoginPost" class="form">
+      @helper.CSRF.formField
+      Username: <input type="text" name="username" id="username-login" class="input-box">
+      <br>
+      Password: <input type="password" name="password" id="password-login" class="input-box">
+      <br>
+      <input type="submit" class="submit">
+    </form>
 
-            @helper.form(routes.taskList1.createUserForm) {
-                @helper.CSRF.formField
-                @helper.inputText(loginForm("Username"), Symbol("class") -> "input-box",  Symbol("_label") -> Nil, Symbol("_showConstraints") -> false)
-                @helper.input(loginForm("Username"), Symbol("_label") -> Nil) { (id, name, value, args) =>
-                  Username: <input class="input-box" type="text" name="@name" id="id">
-                }
-                @helper.inputPassword(loginForm("Password"), Symbol("class") -> "input-box", Symbol("_label") -> Nil, Symbol("_showConstraints") -> false)
-                <div>
-                    <button class="submit" type="submit">Create User</button>
-                </div>
-            }
-
-            <h1>Create User</h1>
-            <form method="post" action="@routes.taskList1.createUser" class="form">
-                @helper.CSRF.formField
-                Username: <input type="text" name="username" id="username-login" class="input-box">
-                <br>
-                Password: <input type="password" name="password" id="password-login" class="input-box">
-                <br>
-                <input type="submit" class="submit">
-            </form>
+      <h1 class="form-title">Create User</h1>
+    @helper.form(routes.taskList1.createUserForm) {
+        @helper.CSRF.formField
+        @helper.inputText(loginForm("Username"), Symbol("class") -> "input-box")
+        @helper.inputPassword(loginForm("Password"), Symbol("class") -> "input-box")
+        <div>
+          <button class="submit" type="submit">Create User</button>
         </div>
-    </div>
+    }
+  </div>
+</div>
 }

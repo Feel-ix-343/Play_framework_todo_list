@@ -1,5 +1,5 @@
-.errors{
-    background: red;
+.flash-errors{
+    background: lightcoral;
     border-radius: 5px;
     text-align: center;
     padding-top: 2vh;
@@ -8,11 +8,6 @@
     margin-right: 25vw;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
-
-.error {
-    color: white;
-}
-
 
 .container{
     display: flex;
@@ -48,9 +43,7 @@
     cursor: pointer;
 }
 
-.info{
-    font-size: 14px;
-    font-family: "Odudo Mono Light", serif;
+.form-title{
 }
 
 .input-box {
@@ -60,7 +53,26 @@
     font-size: 25px;
     font-family: "Odudo Mono Bold";
     margin-top: 5px;
-    margin-bottom: 5px;
+}
+
+.info {
+    display: inline-block;
+    color: white;
+    background: grey;
+    padding: 5px;
+    width: 200px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.error {
+    display: inline-block;
+    color: white;
+    background: lightcoral;
+    padding: 5px;
+    width: 200px;
+    border-radius: 10px;
+    margin-top: 5px;
 }
 
 .form{
