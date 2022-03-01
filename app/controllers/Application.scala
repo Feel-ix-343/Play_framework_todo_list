@@ -4,6 +4,7 @@ import javax.inject._
 import play.api._
 import play.api.mvc._
 
+
 /**
  * This controller creates an `Action` to handle HTTP requests to the
  * application's home page.
@@ -24,5 +25,9 @@ class Application @Inject()(val controllerComponents: ControllerComponents) exte
 
   def randomNumber = Action {
     Ok(util.Random.nextInt(100).toString)
+  }
+
+  def randomString(length: Int) = Action {
+    Ok(util.Random.nextString(length))
   }
 }

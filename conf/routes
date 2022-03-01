@@ -6,6 +6,7 @@
 # An example controller showing a sample home page
 GET     /                           controllers.Application.index()
 GET     /random                     controllers.Application.randomNumber
+GET     /randomString/:length                     controllers.Application.randomString(length: Int)
 
 # Task list
 GET     /taskList1      controllers.taskList1.taskList
