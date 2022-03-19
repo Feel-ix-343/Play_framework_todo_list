@@ -1,9 +1,10 @@
-$("#contents").load("/login2")
 
 const loginRoute = $("#loginRoute").val()
 const validateRoute = $("#validateRoute").val()
 const createRoute = $("#createRoute").val()
 const csrfToken = $("#csrfToken").val()
+
+$("#contents").load(loginRoute)
 
 function login(){
     const username = $("#loginName").val()

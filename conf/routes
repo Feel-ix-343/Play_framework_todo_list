@@ -22,9 +22,12 @@ POST    /deleteTask1        controllers.taskList1.deleteTask
 # Task list version 2
 GET     /load2              controllers.TaskList2.load
 GET     /login2             controllers.TaskList2.login
+GET     /taskList2          controllers.TaskList2.taskList
 POST     /validate2         controllers.TaskList2.validate
 POST     /create2            controllers.TaskList2.create
+# TODO Convert to POST
 GET     /deleteTask2        controllers.TaskList2.delete(index: Int)
+# TODO Convert to POST
 GET     /addTask2           controllers.TaskList2.addTask(task)
 GET     /logout2            controllers.TaskList2.logout
 

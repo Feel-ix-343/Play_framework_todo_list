@@ -9,7 +9,14 @@ import models.TaskListInMemoryModel
 @Singleton
 class TaskList2 @Inject()(cc: ControllerComponents) extends AbstractController(cc) {
   def load: Action[AnyContent] = Action { implicit request =>
-    Ok(views.html.TaskList2())
+    request.session.get("username").map{ username =>
+      Ok(views.html.TaskList2(routes.TaskList2.taskList.toString))
+    }.getOrElse(Ok(views.html.TaskList2(routes.TaskList2.login.toString)))
+  }
+  def taskList = Action { implicit request =>
+    request.session.get("username").map { username =>
+      Ok(views.html.TaskList2TaskView(TaskListInMemoryModel.getTasks(username)))
+    }.getOrElse(Ok(views.html.Login2()))
   }
   def login = Action {
     Ok(views.html.Login2())
