@@ -1,0 +1,18 @@
+@(taskList: Seq[String])
+<div class="container">
+    <div class="centered-display">
+        <h1>Task List</h1>
+        <input id="newTask" type="text" class="input-box">
+        <button class="submit" onclick="addTask()">Add</button>
+
+        @for((task, i) <- taskList.zipWithIndex) {
+            <div class="tasklist">
+                <button class="taskset" onclick="deleteTask(@i)">X</button>
+                @task
+            </div>
+        }
+        <div>
+            <a href="@routes.TaskList2.logout"><button type="button" class="submit">Logout</button></a>
+        </div>
+    </div>
+</div>
