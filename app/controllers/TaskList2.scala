@@ -14,21 +14,32 @@ class TaskList2 @Inject()(cc: ControllerComponents) extends AbstractController(c
   def login = Action {
     Ok(views.html.Login2())
   }
-  def validate(username: String, password: String) = Action {
-    if (TaskListInMemoryModel.validateUser(username, password)) {
-      Ok(views.html.TaskList2TaskView(TaskListInMemoryModel.getTasks(username))).withSession("username" -> username)
-    }
-    else {
-      Ok(views.html.Login2())
-    }
+  def validate = Action { implicit request =>
+    val postVal = request.body.asFormUrlEncoded
+    postVal.map { args =>
+      val username = args("username").head
+      val password = args("password").head
+      if (TaskListInMemoryModel.validateUser(username, password)) {
+        Ok(views.html.TaskList2TaskView(TaskListInMemoryModel.getTasks(username))).withSession("username" -> username)
+      }
+      else {
+        Ok(views.html.Login2())
+      }
+    }.getOrElse(Ok(views.html.Login2()))
+
   }
-  def create(username: String, password: String) = Action {
-    if (TaskListInMemoryModel.createUser(username, password)) {
-      Ok(views.html.TaskList2TaskView(TaskListInMemoryModel.getTasks(username))).withSession("username" -> username)
-    }
-    else {
-      Ok(views.html.Login2())
-    }
+  def create = Action { implicit request =>
+    val postVal = request.body.asFormUrlEncoded
+    postVal.map { args =>
+      val username = args("username").head
+      val password = args("password").head
+      if (TaskListInMemoryModel.createUser(username, password)) {
+        Ok(views.html.TaskList2TaskView(TaskListInMemoryModel.getTasks(username))).withSession("username" -> username)
+      }
+      else {
+        Ok(views.html.Login2())
+      }
+    }.getOrElse(Ok(views.html.Login2()))
   }
   def delete(index: Int): Action[AnyContent] = Action { implicit request =>
     request.session.get("username").map { username =>
