@@ -8,7 +8,7 @@ GET     /                           controllers.Application.index()
 GET     /random                     controllers.Application.randomNumber
 GET     /randomString/:length                     controllers.Application.randomString(length: Int)
 
-# Task list
+# Task list version 1
 GET     /taskList1      controllers.taskList1.taskList
 GET     /login1         controllers.taskList1.login
 GET     /validateGet1      controllers.taskList1.validateLoginGet(username, password)
@@ -18,6 +18,9 @@ POST    /createUser1        controllers.taskList1.createUser
 GET     /logout1            controllers.taskList1.logout
 POST    /addTask1           controllers.taskList1.addTask
 POST    /deleteTask1        controllers.taskList1.deleteTask
+
+# Task list version 2
+GET     /load2              controllers.TaskList2.load
 
 
 # Map static resources from the /public folder to the /assets URL path
