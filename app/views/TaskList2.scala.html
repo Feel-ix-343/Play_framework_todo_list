@@ -2,6 +2,10 @@
 
 @main("Task List (Version 2)") {
     <div id="contents" class="container"></div>
+
+    <input type="hidden" id="loginRoute" value="@routes.TaskList2.login">
+    <input type="hidden" id="validateRoute" value="@routes.TaskList2.validate("aaa", "bbb")">
+
     <script src="@routes.Assets.versioned("javascripts/taskListV2.js")"></script>
 }
 
