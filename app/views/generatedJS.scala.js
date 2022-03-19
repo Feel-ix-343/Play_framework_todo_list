@@ -1,6 +1,6 @@
 @()
 
-$("#contents").load("@routes.")
+$("#contents").load("@routes.TaskList2.login")
 
 function login(){
     const username = $("#loginName").val()

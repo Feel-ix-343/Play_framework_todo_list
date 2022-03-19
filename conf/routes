@@ -27,6 +27,7 @@ GET     /create2            controllers.TaskList2.create(username, password)
 GET     /deleteTask2        controllers.TaskList2.delete(index: Int)
 GET     /addTask2           controllers.TaskList2.addTask(task)
 GET     /logout2            controllers.TaskList2.logout
+GET     /generatedJS        controllers.TaskList2.generatedJS
 
 
 # Map static resources from the /public folder to the /assets URL path
