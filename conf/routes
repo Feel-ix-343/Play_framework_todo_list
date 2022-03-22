@@ -25,9 +25,7 @@ GET     /login2             controllers.TaskList2.login
 GET     /taskList2          controllers.TaskList2.taskList
 POST     /validate2         controllers.TaskList2.validate
 POST     /create2            controllers.TaskList2.create
-# TODO Convert to POST
 POST     /deleteTask2        controllers.TaskList2.delete
-# TODO Convert to POST
 POST     /addTask2           controllers.TaskList2.addTask
 GET     /logout2            controllers.TaskList2.logout
 

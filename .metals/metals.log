@@ -278,3 +278,81 @@ Caused by: java.io.IOException: error=2, No such file or directory
 2022.03.22 09:45:03 INFO  time: compiled root in 1.27s[0m
 2022.03.22 09:45:03 INFO  compiling root (2 scala sources and 1 java source)[0m
 2022.03.22 09:45:03 INFO  time: compiled root in 0.71s[0m
+2022.03.22 09:46:17 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/felix/coding/GeneralLearning/play-todo-list/.metals/lsp.trace.json or /home/felix/.cache/metals/lsp.trace.json[0m
+2022.03.22 09:46:18 INFO  logging to file /home/felix/coding/GeneralLearning/play-todo-list/.metals/metals.log[0m
+2022.03.22 09:46:18 INFO  Started: Metals version 0.11.2 in workspace '/home/felix/coding/GeneralLearning/play-todo-list' for client Neovim 0.6.1.[0m
+2022.03.22 09:46:18 INFO  Parse release: 11.0.15[0m
+2022.03.22 09:46:19 INFO  time: initialize in 1.64s[0m
+2022.03.22 09:46:20 INFO  Attempting to connect to the build server...[0m
+2022.03.22 09:46:19 INFO  skipping build import with status 'Installed'[0m
+2022.03.22 09:46:19 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/felix/coding/GeneralLearning/play-todo-list/.metals/bsp.trace.json or /home/felix/.cache/metals/bsp.trace.json[0m
+2022.03.22 09:46:19 INFO  Attempting to connect to the build server...[0m
+2022.03.22 09:46:19 INFO  Attempting to connect to the build server...[0m
+2022.03.22 09:46:19 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/felix/coding/GeneralLearning/play-todo-list/project/project/.metals/bsp.trace.json or /home/felix/.cache/metals/bsp.trace.json[0m
+2022.03.22 09:46:20 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/felix/coding/GeneralLearning/play-todo-list/project/.metals/bsp.trace.json or /home/felix/.cache/metals/bsp.trace.json[0m
+2022.03.22 09:46:19 INFO  time: Connected to build server in 0.29s[0m
+2022.03.22 09:46:19 INFO  Connected to Build server: Bloop v1.4.13[0m
+2022.03.22 09:46:23 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk/src.zip, /usr/lib/jvm/java-11-openjdk/lib/src.zip. Java symbols will not be available.[0m
+2022.03.22 09:46:23 INFO  time: indexed workspace in 3.29s[0m
+2022.03.22 09:46:27 INFO  shutting down Metals[0m
+2022.03.22 09:46:27 INFO  Shut down connection with build server.[0m
+2022.03.22 09:46:27 INFO  Shut down connection with build server.[0m
+2022.03.22 09:46:27 INFO  Shut down connection with build server.[0m
+2022.03.22 09:46:43 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/felix/coding/GeneralLearning/play-todo-list/.metals/lsp.trace.json or /home/felix/.cache/metals/lsp.trace.json[0m
+2022.03.22 09:46:43 INFO  logging to file /home/felix/coding/GeneralLearning/play-todo-list/.metals/metals.log[0m
+2022.03.22 09:46:43 INFO  Started: Metals version 0.11.2 in workspace '/home/felix/coding/GeneralLearning/play-todo-list' for client Neovim 0.6.1.[0m
+2022.03.22 09:46:43 INFO  Parse release: 11.0.15[0m
+2022.03.22 09:46:45 INFO  time: initialize in 1.87s[0m
+2022.03.22 09:46:46 INFO  Attempting to connect to the build server...[0m
+2022.03.22 09:46:45 INFO  skipping build import with status 'Installed'[0m
+2022.03.22 09:46:45 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/felix/coding/GeneralLearning/play-todo-list/.metals/bsp.trace.json or /home/felix/.cache/metals/bsp.trace.json[0m
+2022.03.22 09:46:46 INFO  Attempting to connect to the build server...[0m
+2022.03.22 09:46:46 INFO  Attempting to connect to the build server...[0m
+2022.03.22 09:46:46 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/felix/coding/GeneralLearning/play-todo-list/project/.metals/bsp.trace.json or /home/felix/.cache/metals/bsp.trace.json[0m
+2022.03.22 09:46:46 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/felix/coding/GeneralLearning/play-todo-list/project/project/.metals/bsp.trace.json or /home/felix/.cache/metals/bsp.trace.json[0m
+2022.03.22 09:46:46 INFO  time: Connected to build server in 0.32s[0m
+2022.03.22 09:46:46 INFO  Connected to Build server: Bloop v1.4.13[0m
+2022.03.22 09:46:49 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk/src.zip, /usr/lib/jvm/java-11-openjdk/lib/src.zip. Java symbols will not be available.[0m
+2022.03.22 09:46:49 INFO  time: indexed workspace in 3.82s[0m
+2022.03.22 09:47:14 INFO  shutting down Metals[0m
+2022.03.22 09:47:14 INFO  Shut down connection with build server.[0m
+2022.03.22 09:47:14 INFO  Shut down connection with build server.[0m
+2022.03.22 09:47:14 INFO  Shut down connection with build server.[0m
+2022.03.22 09:48:34 INFO  shutting down Metals[0m
+2022.03.22 09:48:34 INFO  Shut down connection with build server.[0m
+2022.03.22 09:48:34 INFO  Shut down connection with build server.[0m
+2022.03.22 09:48:34 INFO  Shut down connection with build server.[0m
+2022.03.22 09:48:38 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/felix/coding/GeneralLearning/play-todo-list/.metals/lsp.trace.json or /home/felix/.cache/metals/lsp.trace.json[0m
+2022.03.22 09:48:38 INFO  logging to file /home/felix/coding/GeneralLearning/play-todo-list/.metals/metals.log[0m
+2022.03.22 09:48:38 INFO  Started: Metals version 0.11.2 in workspace '/home/felix/coding/GeneralLearning/play-todo-list' for client Neovim 0.6.1.[0m
+2022.03.22 09:48:38 INFO  Parse release: 11.0.15[0m
+2022.03.22 09:48:40 INFO  time: initialize in 1.71s[0m
+2022.03.22 09:48:41 INFO  Attempting to connect to the build server...[0m
+2022.03.22 09:48:40 INFO  skipping build import with status 'Installed'[0m
+2022.03.22 09:48:40 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/felix/coding/GeneralLearning/play-todo-list/.metals/bsp.trace.json or /home/felix/.cache/metals/bsp.trace.json[0m
+2022.03.22 09:48:40 INFO  Attempting to connect to the build server...[0m
+2022.03.22 09:48:40 INFO  Attempting to connect to the build server...[0m
+2022.03.22 09:48:40 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/felix/coding/GeneralLearning/play-todo-list/project/.metals/bsp.trace.json or /home/felix/.cache/metals/bsp.trace.json[0m
+2022.03.22 09:48:41 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/felix/coding/GeneralLearning/play-todo-list/project/project/.metals/bsp.trace.json or /home/felix/.cache/metals/bsp.trace.json[0m
+2022.03.22 09:48:40 INFO  time: Connected to build server in 0.35s[0m
+2022.03.22 09:48:40 INFO  Connected to Build server: Bloop v1.4.13[0m
+2022.03.22 09:48:42 INFO  shutting down Metals[0m
+2022.03.22 09:48:42 INFO  Shut down connection with build server.[0m
+2022.03.22 09:48:41 INFO  Shut down connection with build server.[0m
+2022.03.22 09:48:42 INFO  Shut down connection with build server.[0m
+2022.03.22 09:50:31 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/felix/coding/GeneralLearning/play-todo-list/.metals/lsp.trace.json or /home/felix/.cache/metals/lsp.trace.json[0m
+2022.03.22 09:50:31 INFO  logging to file /home/felix/coding/GeneralLearning/play-todo-list/.metals/metals.log[0m
+2022.03.22 09:50:31 INFO  Started: Metals version 0.11.2 in workspace '/home/felix/coding/GeneralLearning/play-todo-list' for client Neovim 0.6.1.[0m
+2022.03.22 09:50:31 INFO  Parse release: 11.0.15[0m
+2022.03.22 09:50:33 INFO  time: initialize in 1.73s[0m
+2022.03.22 09:50:33 INFO  Attempting to connect to the build server...[0m
+2022.03.22 09:50:33 INFO  skipping build import with status 'Installed'[0m
+2022.03.22 09:50:33 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/felix/coding/GeneralLearning/play-todo-list/.metals/bsp.trace.json or /home/felix/.cache/metals/bsp.trace.json[0m
+2022.03.22 09:50:33 INFO  Attempting to connect to the build server...[0m
+2022.03.22 09:50:33 INFO  Attempting to connect to the build server...[0m
+2022.03.22 09:50:33 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/felix/coding/GeneralLearning/play-todo-list/project/project/.metals/bsp.trace.json or /home/felix/.cache/metals/bsp.trace.json[0m
+2022.03.22 09:50:34 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/felix/coding/GeneralLearning/play-todo-list/project/.metals/bsp.trace.json or /home/felix/.cache/metals/bsp.trace.json[0m
+2022.03.22 09:50:34 INFO  time: Connected to build server in 0.31s[0m
+2022.03.22 09:50:34 INFO  Connected to Build server: Bloop v1.4.13[0m
+2022.03.22 09:50:37 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk/src.zip, /usr/lib/jvm/java-11-openjdk/lib/src.zip. Java symbols will not be available.[0m
+2022.03.22 09:50:37 INFO  time: indexed workspace in 3.81s[0m
