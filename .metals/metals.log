@@ -65,3 +65,216 @@ Caused by: java.io.IOException: error=2, No such file or directory
 2022.03.19 16:40:48 WARN  Build server is not auto-connectable.[0m
 2022.03.19 16:40:48 INFO  skipping build import with status 'Failed'[0m
 2022.03.19 16:44:17 INFO  shutting down Metals[0m
+2022.03.21 15:52:11 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/felix/coding/GeneralLearning/play-todo-list/.metals/lsp.trace.json or /home/felix/.cache/metals/lsp.trace.json[0m
+2022.03.21 15:52:11 INFO  logging to file /home/felix/coding/GeneralLearning/play-todo-list/.metals/metals.log[0m
+2022.03.21 15:52:11 INFO  Started: Metals version 0.11.2 in workspace '/home/felix/coding/GeneralLearning/play-todo-list' for client Neovim 0.6.1.[0m
+2022.03.21 15:52:11 INFO  Parse release: 11.0.15[0m
+2022.03.21 15:52:12 INFO  time: initialize in 1.37s[0m
+2022.03.21 15:52:12 INFO  Deleting old database format /home/felix/coding/GeneralLearning/play-todo-list/.metals/metals.h2.db[0m
+2022.03.21 15:52:13 INFO  Attempting to connect to the build server...[0m
+2022.03.21 15:52:12 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/felix/coding/GeneralLearning/play-todo-list/.metals/bsp.trace.json or /home/felix/.cache/metals/bsp.trace.json[0m
+2022.03.21 15:52:12 INFO  Attempting to connect to the build server...[0m
+2022.03.21 15:52:12 INFO  Attempting to connect to the build server...[0m
+2022.03.21 15:52:12 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/felix/coding/GeneralLearning/play-todo-list/project/.metals/bsp.trace.json or /home/felix/.cache/metals/bsp.trace.json[0m
+2022.03.21 15:52:13 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/felix/coding/GeneralLearning/play-todo-list/project/project/.metals/bsp.trace.json or /home/felix/.cache/metals/bsp.trace.json[0m
+2022.03.21 15:52:12 INFO  time: Connected to build server in 0.28s[0m
+2022.03.21 15:52:12 INFO  Connected to Build server: Bloop v1.4.13[0m
+2022.03.21 15:52:15 INFO  running '/usr/lib/jvm/java-11-openjdk/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals17865008494667816899/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+2022.03.21 15:52:16 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk/src.zip, /usr/lib/jvm/java-11-openjdk/lib/src.zip. Java symbols will not be available.[0m
+2022.03.21 15:52:16 INFO  [info] welcome to sbt 1.5.2 (Oracle Corporation Java 11.0.15)[0m
+2022.03.21 15:52:17 INFO  time: indexed workspace in 3.72s[0m
+2022.03.21 15:52:17 INFO  compiling root (5 scala sources)[0m
+2022.03.21 15:52:18 INFO  [info] loading global plugins from /home/felix/.sbt/1.0/plugins[0m
+2022.03.21 15:52:20 INFO  time: compiled root in 3.26s[0m
+2022.03.21 15:52:20 INFO  compiling root (2 scala sources and 1 java source)[0m
+2022.03.21 15:52:21 INFO  time: compiled root in 1.11s[0m
+2022.03.21 15:52:23 INFO  [info] loading settings for project play-todo-list-build-build-build from metals.sbt ...[0m
+2022.03.21 15:52:23 INFO  [info] loading project definition from /home/felix/coding/GeneralLearning/play-todo-list/project/project/project[0m
+2022.03.21 15:52:23 INFO  [info] loading settings for project play-todo-list-build-build from metals.sbt ...[0m
+2022.03.21 15:52:23 INFO  [info] loading project definition from /home/felix/coding/GeneralLearning/play-todo-list/project/project[0m
+2022.03.21 15:52:25 INFO  [success] Generated .bloop/play-todo-list-build-build.json[0m
+2022.03.21 15:52:25 INFO  [warn] Removed stale /home/felix/coding/GeneralLearning/play-todo-list/project/project/.bloop/play-learning-build-build.json[0m
+2022.03.21 15:52:25 INFO  [success] Total time: 1 s, completed Mar 21, 2022, 3:52:25 PM[0m
+2022.03.21 15:52:25 INFO  [info] loading settings for project play-todo-list-build from metals.sbt,plugins.sbt ...[0m
+2022.03.21 15:52:25 INFO  [info] loading project definition from /home/felix/coding/GeneralLearning/play-todo-list/project[0m
+2022.03.21 15:52:27 INFO  [success] Generated .bloop/play-todo-list-build.json[0m
+2022.03.21 15:52:27 INFO  [warn] Removed stale /home/felix/coding/GeneralLearning/play-todo-list/project/.bloop/play-learning-build.json[0m
+2022.03.21 15:52:27 INFO  [success] Total time: 2 s, completed Mar 21, 2022, 3:52:27 PM[0m
+2022.03.21 15:52:27 INFO  [info] loading settings for project root from build.sbt ...[0m
+2022.03.21 15:52:27 INFO  [info]   __              __[0m
+2022.03.21 15:52:27 INFO  [info]   \ \     ____   / /____ _ __  __[0m
+2022.03.21 15:52:27 INFO  [info]    \ \   / __ \ / // __ `// / / /[0m
+2022.03.21 15:52:27 INFO  [info]    / /  / /_/ // // /_/ // /_/ /[0m
+2022.03.21 15:52:27 INFO  [info]   /_/  / .___//_/ \__,_/ \__, /[0m
+2022.03.21 15:52:27 INFO  [info]       /_/               /____/[0m
+2022.03.21 15:52:27 INFO  [info] [0m
+2022.03.21 15:52:27 INFO  [info] Version 2.8.13 running Java 11.0.15[0m
+2022.03.21 15:52:27 INFO  [info] [0m
+2022.03.21 15:52:27 INFO  [info] Play is run entirely by the community. If you want to keep using it please consider donating:[0m
+2022.03.21 15:52:27 INFO  [info] https://www.playframework.com/sponsors[0m
+2022.03.21 15:52:27 INFO  [info] [0m
+2022.03.21 15:52:28 INFO  [success] Generated .bloop/root-test.json[0m
+2022.03.21 15:52:28 INFO  [success] Generated .bloop/root.json[0m
+2022.03.21 15:52:28 INFO  [success] Total time: 0 s, completed Mar 21, 2022, 3:52:28 PM[0m
+2022.03.21 15:52:29 INFO  time: ran 'sbt bloopInstall' in 13s[0m
+2022.03.21 15:52:29 INFO  Disconnecting from Bloop session...[0m
+2022.03.21 15:52:29 INFO  Shut down connection with build server.[0m
+2022.03.21 15:52:29 INFO  Shut down connection with build server.[0m
+2022.03.21 15:52:29 INFO  Shut down connection with build server.[0m
+2022.03.21 15:52:29 INFO  Attempting to connect to the build server...[0m
+2022.03.21 15:52:29 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/felix/coding/GeneralLearning/play-todo-list/.metals/bsp.trace.json or /home/felix/.cache/metals/bsp.trace.json[0m
+2022.03.21 15:52:29 INFO  Attempting to connect to the build server...[0m
+2022.03.21 15:52:29 INFO  Attempting to connect to the build server...[0m
+2022.03.21 15:52:29 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/felix/coding/GeneralLearning/play-todo-list/project/.metals/bsp.trace.json or /home/felix/.cache/metals/bsp.trace.json[0m
+2022.03.21 15:52:29 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/felix/coding/GeneralLearning/play-todo-list/project/project/.metals/bsp.trace.json or /home/felix/.cache/metals/bsp.trace.json[0m
+2022.03.21 15:52:29 INFO  time: Connected to build server in 0.15s[0m
+2022.03.21 15:52:29 INFO  Connected to Build server: Bloop v1.4.13[0m
+2022.03.21 15:52:30 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk/src.zip, /usr/lib/jvm/java-11-openjdk/lib/src.zip. Java symbols will not be available.[0m
+2022.03.21 15:52:30 INFO  time: indexed workspace in 1.2s[0m
+2022.03.21 15:54:09 INFO  compiling root (1 scala source)[0m
+2022.03.21 15:54:09 INFO  time: compiled root in 0.52s[0m
+2022.03.21 15:54:17 INFO  compiling root (1 scala source)[0m
+2022.03.21 15:54:17 INFO  time: compiled root in 0.46s[0m
+2022.03.21 15:54:24 INFO  compiling root (1 scala source)[0m
+2022.03.21 15:54:24 INFO  time: compiled root in 0.46s[0m
+2022.03.21 15:54:29 INFO  compiling root (1 scala source)[0m
+2022.03.21 15:54:29 INFO  time: compiled root in 0.45s[0m
+2022.03.21 15:54:34 INFO  compiling root (1 scala source)[0m
+2022.03.21 15:54:34 INFO  time: compiled root in 0.11s[0m
+2022.03.21 15:54:35 INFO  compiling root (1 scala source)[0m
+2022.03.21 15:54:35 INFO  time: compiled root in 53ms[0m
+2022.03.21 15:54:38 INFO  compiling root (1 scala source)[0m
+2022.03.21 15:54:38 INFO  time: compiled root in 74ms[0m
+2022.03.21 15:54:38 INFO  compiling root (1 scala source)[0m
+2022.03.21 15:54:38 INFO  time: compiled root in 54ms[0m
+2022.03.21 15:54:38 INFO  compiling root (1 scala source)[0m
+2022.03.21 15:54:38 INFO  time: compiled root in 58ms[0m
+2022.03.21 15:54:42 INFO  compiling root (1 scala source)[0m
+2022.03.21 15:54:42 INFO  time: compiled root in 80ms[0m
+2022.03.21 15:54:45 INFO  compiling root (1 scala source)[0m
+2022.03.21 15:54:45 INFO  time: compiled root in 71ms[0m
+2022.03.21 15:54:46 INFO  compiling root (1 scala source)[0m
+2022.03.21 15:54:46 INFO  time: compiled root in 73ms[0m
+2022.03.21 15:54:48 INFO  compiling root (1 scala source)[0m
+2022.03.21 15:54:48 INFO  time: compiled root in 76ms[0m
+2022.03.21 15:54:48 INFO  compiling root (1 scala source)[0m
+2022.03.21 15:54:48 INFO  time: compiled root in 19ms[0m
+2022.03.21 15:54:52 INFO  compiling root (1 scala source)[0m
+2022.03.21 15:54:52 INFO  time: compiled root in 77ms[0m
+2022.03.21 15:55:09 INFO  compiling root (1 scala source)[0m
+2022.03.21 15:55:09 INFO  time: compiled root in 0.44s[0m
+2022.03.21 20:21:01 INFO  shutting down Metals[0m
+2022.03.21 20:21:01 INFO  Shut down connection with build server.[0m
+2022.03.21 20:21:01 INFO  Shut down connection with build server.[0m
+2022.03.21 20:21:01 INFO  Shut down connection with build server.[0m
+2022.03.22 09:31:23 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/felix/coding/GeneralLearning/play-todo-list/.metals/lsp.trace.json or /home/felix/.cache/metals/lsp.trace.json[0m
+2022.03.22 09:31:24 INFO  logging to file /home/felix/coding/GeneralLearning/play-todo-list/.metals/metals.log[0m
+2022.03.22 09:31:24 INFO  Started: Metals version 0.11.2 in workspace '/home/felix/coding/GeneralLearning/play-todo-list' for client Neovim 0.6.1.[0m
+2022.03.22 09:31:24 INFO  Parse release: 11.0.15[0m
+2022.03.22 09:31:26 INFO  time: initialize in 1.84s[0m
+2022.03.22 09:31:26 INFO  Attempting to connect to the build server...[0m
+2022.03.22 09:31:26 INFO  skipping build import with status 'Installed'[0m
+2022.03.22 09:31:29 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/felix/coding/GeneralLearning/play-todo-list/.metals/bsp.trace.json or /home/felix/.cache/metals/bsp.trace.json[0m
+2022.03.22 09:31:29 INFO  Attempting to connect to the build server...[0m
+2022.03.22 09:31:29 INFO  Attempting to connect to the build server...[0m
+2022.03.22 09:31:29 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/felix/coding/GeneralLearning/play-todo-list/project/project/.metals/bsp.trace.json or /home/felix/.cache/metals/bsp.trace.json[0m
+2022.03.22 09:31:29 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/felix/coding/GeneralLearning/play-todo-list/project/.metals/bsp.trace.json or /home/felix/.cache/metals/bsp.trace.json[0m
+2022.03.22 09:31:29 INFO  time: Connected to build server in 3.03s[0m
+2022.03.22 09:31:29 INFO  Connected to Build server: Bloop v1.4.13[0m
+2022.03.22 09:31:29 INFO  time: Imported build in 0.15s[0m
+2022.03.22 09:31:32 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk/src.zip, /usr/lib/jvm/java-11-openjdk/lib/src.zip. Java symbols will not be available.[0m
+2022.03.22 09:31:32 INFO  time: indexed workspace in 3.36s[0m
+2022.03.22 09:31:33 INFO  compiling root (17 scala sources and 1 java source)[0m
+2022.03.22 09:31:44 INFO  compiling root-test (4 scala sources)[0m
+2022.03.22 09:31:44 INFO  time: compiled root in 11s[0m
+2022.03.22 09:31:47 INFO  time: compiled root-test in 2.53s[0m
+2022.03.22 09:32:28 INFO  compiling root (1 scala source)[0m
+2022.03.22 09:32:28 INFO  time: compiled root in 0.11s[0m
+2022.03.22 09:32:28 INFO  compiling root (1 scala source)[0m
+2022.03.22 09:32:28 INFO  time: compiled root in 87ms[0m
+2022.03.22 09:32:28 INFO  compiling root (1 scala source)[0m
+2022.03.22 09:32:28 INFO  time: compiled root in 72ms[0m
+2022.03.22 09:32:29 INFO  compiling root (1 scala source)[0m
+2022.03.22 09:32:29 INFO  time: compiled root in 0.82s[0m
+2022.03.22 09:32:29 INFO  compiling root (1 scala source)[0m
+2022.03.22 09:32:30 INFO  time: compiled root in 0.32s[0m
+2022.03.22 09:33:20 INFO  compiling root (4 scala sources)[0m
+2022.03.22 09:33:24 INFO  time: compiled root in 3.78s[0m
+2022.03.22 09:33:24 INFO  compiling root (2 scala sources and 1 java source)[0m
+2022.03.22 09:33:25 INFO  time: compiled root in 1.9s[0m
+2022.03.22 09:39:01 INFO  compiling root (1 scala source)[0m
+2022.03.22 09:39:01 INFO  time: compiled root in 0.75s[0m
+2022.03.22 09:41:33 INFO  compiling root (1 scala source)[0m
+2022.03.22 09:41:33 INFO  time: compiled root in 0.77s[0m
+2022.03.22 09:41:45 INFO  compiling root (1 scala source)[0m
+2022.03.22 09:41:45 INFO  time: compiled root in 0.69s[0m
+2022.03.22 09:41:48 INFO  compiling root (1 scala source)[0m
+2022.03.22 09:41:48 INFO  time: compiled root in 0.77s[0m
+2022.03.22 09:41:58 INFO  compiling root (1 scala source)[0m
+2022.03.22 09:41:58 INFO  time: compiled root in 0.73s[0m
+2022.03.22 09:42:07 INFO  compiling root (1 scala source)[0m
+2022.03.22 09:42:07 INFO  time: compiled root in 0.67s[0m
+2022.03.22 09:42:23 INFO  compiling root (1 scala source)[0m
+2022.03.22 09:42:23 INFO  time: compiled root in 0.64s[0m
+2022.03.22 09:42:40 INFO  compiling root (1 scala source)[0m
+2022.03.22 09:42:40 INFO  time: compiled root in 0.61s[0m
+2022.03.22 09:42:42 INFO  compiling root (1 scala source)[0m
+2022.03.22 09:42:42 INFO  time: compiled root in 0.26s[0m
+2022.03.22 09:42:46 INFO  compiling root (1 scala source)[0m
+2022.03.22 09:42:46 INFO  time: compiled root in 0.64s[0m
+2022.03.22 09:42:46 INFO  compiling root (1 scala source)[0m
+2022.03.22 09:42:46 INFO  time: compiled root in 0.12s[0m
+2022.03.22 09:42:46 INFO  compiling root (1 scala source)[0m
+2022.03.22 09:42:47 INFO  time: compiled root in 0.11s[0m
+2022.03.22 09:42:47 INFO  compiling root (1 scala source)[0m
+2022.03.22 09:42:47 INFO  time: compiled root in 23ms[0m
+2022.03.22 09:42:47 INFO  compiling root (1 scala source)[0m
+2022.03.22 09:42:47 INFO  time: compiled root in 0.26s[0m
+2022.03.22 09:42:53 INFO  compiling root (1 scala source)[0m
+2022.03.22 09:42:53 INFO  time: compiled root in 64ms[0m
+2022.03.22 09:42:55 INFO  compiling root (1 scala source)[0m
+2022.03.22 09:42:55 INFO  time: compiled root in 0.29s[0m
+2022.03.22 09:42:56 INFO  compiling root (1 scala source)[0m
+2022.03.22 09:42:56 INFO  time: compiled root in 28ms[0m
+2022.03.22 09:42:56 INFO  compiling root (1 scala source)[0m
+2022.03.22 09:42:56 INFO  time: compiled root in 0.1s[0m
+2022.03.22 09:42:58 INFO  compiling root (1 scala source)[0m
+2022.03.22 09:42:58 INFO  time: compiled root in 49ms[0m
+2022.03.22 09:43:03 INFO  compiling root (1 scala source)[0m
+2022.03.22 09:43:03 INFO  time: compiled root in 0.12s[0m
+2022.03.22 09:43:08 INFO  compiling root (1 scala source)[0m
+2022.03.22 09:43:08 INFO  time: compiled root in 0.12s[0m
+2022.03.22 09:43:10 INFO  compiling root (1 scala source)[0m
+2022.03.22 09:43:10 INFO  time: compiled root in 0.11s[0m
+2022.03.22 09:43:12 INFO  compiling root (1 scala source)[0m
+2022.03.22 09:43:12 INFO  time: compiled root in 51ms[0m
+2022.03.22 09:43:12 INFO  compiling root (1 scala source)[0m
+2022.03.22 09:43:12 INFO  time: compiled root in 25ms[0m
+2022.03.22 09:43:15 INFO  compiling root (1 scala source)[0m
+2022.03.22 09:43:15 INFO  time: compiled root in 0.65s[0m
+2022.03.22 09:44:44 INFO  compiling root (3 scala sources)[0m
+2022.03.22 09:44:44 INFO  time: compiled root in 0.41s[0m
+2022.03.22 09:44:44 INFO  compiling root (3 scala sources)[0m
+2022.03.22 09:44:44 INFO  time: compiled root in 0.35s[0m
+2022.03.22 09:44:59 INFO  compiling root (4 scala sources)[0m
+2022.03.22 09:44:59 INFO  time: compiled root in 75ms[0m
+2022.03.22 09:44:59 INFO  compiling root (4 scala sources)[0m
+2022.03.22 09:44:59 INFO  time: compiled root in 34ms[0m
+2022.03.22 09:44:59 INFO  compiling root (4 scala sources)[0m
+2022.03.22 09:44:59 INFO  time: compiled root in 44ms[0m
+2022.03.22 09:44:59 INFO  compiling root (4 scala sources)[0m
+2022.03.22 09:44:59 INFO  time: compiled root in 29ms[0m
+2022.03.22 09:44:59 INFO  compiling root (4 scala sources)[0m
+2022.03.22 09:44:59 INFO  time: compiled root in 47ms[0m
+2022.03.22 09:45:00 INFO  compiling root (4 scala sources)[0m
+2022.03.22 09:45:00 INFO  time: compiled root in 45ms[0m
+2022.03.22 09:45:00 INFO  compiling root (4 scala sources)[0m
+2022.03.22 09:45:00 INFO  time: compiled root in 33ms[0m
+2022.03.22 09:45:00 INFO  compiling root (4 scala sources)[0m
+2022.03.22 09:45:00 INFO  time: compiled root in 24ms[0m
+2022.03.22 09:45:00 INFO  compiling root (4 scala sources)[0m
+2022.03.22 09:45:00 INFO  time: compiled root in 30ms[0m
+2022.03.22 09:45:01 INFO  compiling root (4 scala sources)[0m
+2022.03.22 09:45:03 INFO  time: compiled root in 1.27s[0m
+2022.03.22 09:45:03 INFO  compiling root (2 scala sources and 1 java source)[0m
+2022.03.22 09:45:03 INFO  time: compiled root in 0.71s[0m

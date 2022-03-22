@@ -48,16 +48,24 @@ class TaskList2 @Inject()(cc: ControllerComponents) extends AbstractController(c
       }
     }.getOrElse(Ok(views.html.Login2()))
   }
-  def delete(index: Int): Action[AnyContent] = Action { implicit request =>
-    request.session.get("username").map { username =>
-      TaskListInMemoryModel.removeTask(username, index)
-      Ok(views.html.TaskList2TaskView(TaskListInMemoryModel.getTasks(username)))
+  def delete: Action[AnyContent] = Action { implicit request =>
+    val postVal = request.body.asFormUrlEncoded
+    postVal.map { args =>
+      val index = args("index").head.toInt
+        request.session.get("username").map { username =>
+          TaskListInMemoryModel.removeTask(username, index)
+          Ok(views.html.TaskList2TaskView(TaskListInMemoryModel.getTasks(username)))
+      }.getOrElse(Ok(views.html.Login2()))
     }.getOrElse(Ok(views.html.Login2()))
   }
-  def addTask(task: String) = Action { implicit request =>
-    request.session.get("username").map { username =>
-      TaskListInMemoryModel.addTask(username, task)
-      Ok(views.html.TaskList2TaskView(TaskListInMemoryModel.getTasks(username)))
+  def addTask = Action { implicit request =>
+    val postVal = request.body.asFormUrlEncoded
+    postVal.map { args =>
+      val task = args("task").head
+      request.session.get("username").map { username => 
+        TaskListInMemoryModel.addTask(username, task)
+        Ok(views.html.TaskList2TaskView(TaskListInMemoryModel.getTasks(username)))
+      }.getOrElse(Ok(views.html.Login2()))
     }.getOrElse(Ok(views.html.Login2()))
   }
   def logout = Action {
