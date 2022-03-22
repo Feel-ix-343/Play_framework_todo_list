@@ -6,5 +6,5 @@ target
 /.classpath
 /.project
 /.settings
-/.metals
+.metals
 /RUNNING_PID
