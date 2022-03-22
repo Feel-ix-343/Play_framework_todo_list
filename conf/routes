@@ -25,10 +25,8 @@ GET     /login2             controllers.TaskList2.login
 GET     /taskList2          controllers.TaskList2.taskList
 POST     /validate2         controllers.TaskList2.validate
 POST     /create2            controllers.TaskList2.create
-# TODO Convert to POST
-GET     /deleteTask2        controllers.TaskList2.delete(index: Int)
-# TODO Convert to POST
-GET     /addTask2           controllers.TaskList2.addTask(task)
+POST     /deleteTask2        controllers.TaskList2.delete
+POST     /addTask2           controllers.TaskList2.addTask
 GET     /logout2            controllers.TaskList2.logout
 
 # Routes for version 3
