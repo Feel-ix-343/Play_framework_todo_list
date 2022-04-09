@@ -1,12 +1,14 @@
 @()(implicit flash: Flash)
 
 @main("Home") {
-  <h1>Home</h1>
-  <a href="@routes.taskList1.login">Task List</a>
-  <br>
-  <a href="@routes.TaskList2.load">Task List 2</a>
+<h1>Home</h1>
+<a href="@routes.taskList1.login">Task List</a>
+<br>
+<a href="@routes.TaskList2.load">Task List 2</a>
+<br>
+<a href="@routes.TaskList3.load">Task List 3</a>
 
-  <p id="randomText">Click for a new random number: <span id="random">4</span></p>
+<p id="randomText">Click for a new random number: <span id="random">4</span></p>
 
-  <script src="@routes.Assets.versioned("javascripts/basicStuff.js")"></script>
+<script src="@routes.Assets.versioned(" javascripts/basicStuff.js")"></script>
 }
